@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UserPage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        body
+        {
+             background-image: url("./images/AdminPage.jpg");
+              max-width: 100%;
+             height: 100%; 
+             background-size: cover;
+             font-family: 'Varela Round', sans-serif;
+             font-size: 13px;
+        }
+        h2
+        {
+            color : #5dade2;
+        }
+        h3
+        {
+            color : #d0d3d4;
+        }
+        strong
+        {
+            color : red;
+        }
+        *[role="form"] {
+            max-width: 530px;
+            padding: 15px;
+            margin: 0 auto;
+            border-radius: 0.3em;
+            background-color: #f2f2f2;
+        }
+        
+        *[role="form"] h2 { 
+            font-family: 'Open Sans' , sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            color: #5dade2;
+            margin-top: 5%;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        
+        .button {
+          padding: 7px 15px;
+          font-size: 15px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: #FFFFFF;
+          background-color: #f4511e;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #999;
+        }
+    </style>  
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <h2>UserPage</h2>
+            <div class="topnav">
+                <h3>Welcome <span class="text-uppercase">User</span>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </h3>
+            </div>
+            <ul class="nav nav-tabs">
+                <form action="logoutCustomer" method="post" >
+                    <div class="pull-right">
+                        <button class="button">Log Out</button>
+                    </div>
+                </form> 
+                <li><a data-toggle="tab" href="#menu1">Medicare Details</a></li>
+                <li><a data-toggle="tab" href="#menu2">Doctor Details</a></li>
+                <li><a data-toggle="tab" href="#menu3">Agent Details</a></li>
+                <li><a data-toggle="tab" href="#menu4">Pending Tests</a></li>
+                <li><a data-toggle="tab" href="#menu5">Completed Tests</a></li>
+                <li><a data-toggle="tab" href="#menu6">Raise Request</a></li>
+            </ul>
+        </div>
+    </div> 
+</body>
+</html>
